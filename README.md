@@ -1,4 +1,4 @@
-# WordPress hack Cleanup Code Snippets
+# WordPress Hack Cleanup Code Snippets
 Small snippets of code which make our life easier when trying to clean up a hacked WordPress site.
 
 ## MySQL
@@ -8,3 +8,7 @@ Sometimes a backdoor allows the  hacker to inject WP admin users which aren't vi
 ```
 select * from wp_usermeta where (meta_value) like '%administrator%' and (user_id) not in (select id from wp_users);
 ```
+
+# [Contributing](CONTRIBUTING.md)
+
+Pull requests and issues with suggestions are welcome! Please read the [CONTRIBUTING](CONTRIBUTING.md) guidelines before submitting a PR.
